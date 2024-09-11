@@ -1,0 +1,13 @@
+:root {
+  --color1: #190019;
+  --color4: #2b124c;
+  --color3: #522b5b;
+  --color2: #854f6c;
+  --color5: #dfb6b2;
+  --color6: #fbe4d8;
+  --font1: 'Montserrat', sans-serif;
+  --font2: 'Trirong', serif;
+  --font3: 'Merriweather', serif;
+  --gradient:linear-gradient(180deg, rgba(25,0,25,1) 0%, rgba(43,18,76,1) 46%, rgba(82,43,91,1) 72%, rgba(133,79,108,1) 100%);
+  --gradient2:linear-gradient(180deg, rgba(133,79,108,1) 0%, rgba(82,43,91,1) 38%, rgba(43,18,76,1) 67%, rgba(25,0,25,1) 100%);
+}

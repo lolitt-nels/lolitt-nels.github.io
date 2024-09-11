@@ -1,0 +1,551 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: clip;
+  background: var(--color1);
+}
+
+.header {
+  top: 0;
+  width: 100%;
+  padding: 20px;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: inset 0px -1px var(--color5);
+  position: fixed;
+  backdrop-filter: blur(8px);
+  transition: backdrop-filter 0.5s ease;
+  z-index: 99;
+  /* background-image: url('assets/your-background.gif'); Path to your GIF 
+  background-size: cover; /* Cover the entire container 
+  background-position: center; /* Center the background */
+}
+
+/* Navbar animation start */
+.header2 {
+  width: 100%;
+  height: 40px;
+}
+
+.menu2 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+.menu2 li {
+  display: block;
+  height: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 1.3px;
+  text-shadow: 0 0 15px var(--color2);
+  transition: all 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
+  padding: 0 1.5rem;
+  font-size: 1.3em;
+  cursor: pointer;
+  color: var(--color6);
+  font-family: var(--font3);
+}
+
+.menu2 li:after,
+.menu2 li:before {
+  content: "";
+  position: absolute;
+  display: block;
+  border: 0px solid transparent;
+  width: 0%;
+  height: 0%;
+  transition: all 0.5s ease;
+  border-radius: 10px 0 10px 0;
+}
+
+.menu2 li:after {
+  width: 0%;
+  height: 0%;
+  top: 0;
+  left: 0;
+  border-top: 2px solid transparent;
+  border-left: 2px solid transparent;
+}
+
+.menu2 li:before {
+  width: 0%;
+  height: 0%;
+  right: 0;
+  bottom: 0;
+  border-bottom: 2px solid transparent;
+  border-right: 2px solid transparent;
+}
+
+.menu2 li:hover::before,
+.menu2 li:hover::after {
+  width: 100%;
+  height: 100%;
+  border-color: var(--color2);
+}
+/* navbar animation end */
+.logo {
+  font-family: var(--font1);
+  font-weight: 800;
+  font-size: 1.5rem;
+  padding: 2px 0;
+  text-transform: lowercase;
+  letter-spacing: 0.05em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* logo animation start */
+
+.logo h2 {
+  position: absolute;
+  filter: contrast(175%) brightness(200%);
+}
+
+.logo h2:nth-child(1) {
+  color: transparent;
+  -webkit-text-stroke: 0.5px var(--color3);
+}
+
+.logo h2:nth-child(2) {
+  color: var(--color2);
+  animation: animate 3s ease-in-out infinite;
+}
+
+
+
+/* logo animation end */
+#header-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100vh;
+}
+
+.content {
+  color: var(--color2);
+}
+
+.content h1 {
+  font-size: 2.5rem;
+  font-family: var(--font1);
+}
+
+.content #element {
+  font-size: 28px;
+  color: var(--color2);
+  line-height: 0.9em;
+  letter-spacing: 0.02em;
+  font-weight: bolder;
+  font-family: var(--font2);
+}
+
+.content hr {
+  margin-top: 15px;
+  width: 7%;
+  height: 3px;
+  border-radius: 20px 0;
+  border-width: 0;
+  background-color: var(--color2);
+}
+
+.content p {
+  width: 28rem;
+  margin: 20px 0;
+  text-align: justify;
+  letter-spacing: 0.02em;
+  line-height: 1.4em;
+  font-size: 1.2em;
+  font-family: var(--font2);
+}
+
+.social_media {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 25px 0;
+}
+
+.social_media .fa-github,
+.fa-linkedin {
+  width: fit-content;
+  font-size: 2em;
+  letter-spacing: 1rem;
+  color: var(--color);
+}
+
+.social_media .fa-github:hover,
+.fa-linkedin:hover {
+  color: var(--color5);
+  transition: color 1s ease;
+}
+
+/* resume button start */
+
+.resume {
+  width: 100px;
+  display: block;
+  padding: 8px;
+  border-radius: 5px;
+  background: linear-gradient(
+    to left,
+    transparent 50%,
+    var(--color3) 50%,
+    var(--color5)
+  );
+  background-size: 200% 100%;
+  background-position: left bottom;
+  transition: all 0.5s ease-out;
+  margin-top: 15px;
+}
+
+.resume-container {
+  border: 1px solid var(--color2);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.resume:hover {
+  background-position: right bottom;
+}
+
+a {
+  text-decoration: none;
+}
+
+.text {
+  text-align: center;
+  font-size: 18px;
+  color: var(--color4);
+  transition: all 0.6s ease-out;
+  display: block;
+  cursor: pointer;
+  font-family: var(--font3);
+}
+
+.text:hover {
+  color: var(--color5);
+}
+/* resume button end */
+#header-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100vh;
+}
+
+.content {
+  color: var(--color6);
+}
+
+.content h1 {
+  font-size: 2.5rem;
+  font-family: var(--font1);
+  margin: 7px 0;
+}
+
+.content #element {
+  font-size: 28px;
+  color: var(--color2);
+  line-height: 0.9em;
+  letter-spacing: 0.02em;
+  font-weight: bolder;
+  font-family: var(--font2);
+}
+
+.content hr {
+  margin-top: 15px;
+  width: 7%;
+  height: 3px;
+  border-radius: 20px 0;
+  border-width: 0;
+  background-color: var(--color5);
+}
+
+.content p {
+  width: 28rem;
+  margin: 20px 0;
+  text-align: justify;
+  letter-spacing: 0.02em;
+  line-height: 1.4em;
+  font-size: 1.2em;
+  font-family: var(--font3);
+}
+
+.social_media {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 25px 0;
+}
+
+.social_media .fa-github,
+.fa-linkedin {
+  width: fit-content;
+  font-size: 2em;
+  letter-spacing: 1rem;
+  color: var(--color2);
+}
+
+.social_media .fa-github:hover,
+.fa-linkedin:hover {
+  color: var(--color5);
+  transition: color 1s ease;
+}
+
+
+
+
+
+/* Start of Card Flip animation */
+.card {
+  width: 17em;
+  height: 17em;
+  perspective: 500px;
+}
+
+.__content {
+  width: 17em;
+  height: 17em;
+  transition: 1s ease-in-out;
+  transform-style: preserve-3d;
+}
+
+.card:hover .__content {
+  transform: rotateY(180deg);
+  transition: 0.5s ease-in-out;
+}
+
+.front,
+.back {
+  object-fit: contain;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  box-shadow: 5px 5px 10px var(--color5);
+  border-radius: 50%;
+  backface-visibility: hidden;
+}
+
+.back {
+  background: linear-gradient(
+    -45deg,
+    var(--color3),
+    var(--color2),
+    var(--color3)
+  );
+  transform: rotateY(180deg);
+}
+/* End of Card Flip animation */
+
+.back ul {
+  position: absolute;
+  bottom: 2rem;
+  list-style-position: inside;
+  list-style-type: disc;
+  font-family: var(--font3);
+}
+
+.back h1 {
+  font-family: var(--font2);
+  position: absolute;
+  top: 3rem;
+}
+
+/* wave animation for scroll section */
+
+.wave {
+  font-family: var(--font3);
+  position: relative;
+  -webkit-box-reflect: below -12px linear-gradient(transparent, var(--color5));
+}
+
+.wave span {
+  position: relative;
+  display: inline-block;
+  color: var(--color5);
+  font-size: 1em;
+  animation: wave 2s ease-in-out infinite;
+  animation-delay: calc(0.1s * var(--i));
+}
+
+
+
+/* Scroll animation start */
+.wave-container {
+  width: 100%;
+  text-align: center;
+  height: 50vh;
+  display: flex;
+  background: var(--gradient);
+  justify-content: center;
+  align-items: center;
+}
+.wave span:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.wave span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.wave span:nth-child(3) {
+  animation-delay: 0.3s;
+}
+.wave span:nth-child(4) {
+  animation-delay: 0.4s;
+}
+.wave span:nth-child(5) {
+  animation-delay: 0.5s;
+}
+.wave span:nth-child(6) {
+  animation-delay: 0.6s;
+}
+.wave span:nth-child(8) {
+  animation-delay: 0.7s;
+}
+.wave span:nth-child(9) {
+  animation-delay: 0.8s;
+}
+.wave span:nth-child(10) {
+  animation-delay: 0.9s;
+}
+.wave span:nth-child(11) {
+  animation-delay: 1s;
+}
+
+section .container {
+  margin: 100px 0;
+}
+
+.text-box img {
+  border-radius: 10px;
+}
+
+/* arrow animation starts */
+.arrow {
+  position: absolute;
+  top: 170%;
+  left: 53.5%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.arrow span {
+  display: block;
+  width: 1.5vw;
+  height: 1.5vw;
+  border-bottom: 5px solid var(--color5);
+  border-right: 5px solid var(--color6);
+  transform: rotate(45deg);
+  animation: arrow 2s infinite;
+}
+
+.arrow span:nth-child(2) {
+  animation-delay: -0.2s;
+}
+
+
+/* arrow animation ends */
+
+#about {
+  padding-top: 15vh;
+  width: 65%;
+  margin: auto;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 2rem;
+  text-align: center;
+}
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: var(--gradient2);
+}
+.about-social-container {
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-around;
+  padding: 0 1em;
+}
+#about p {
+  margin: 20px 3vh;
+  color: var(--color5);
+  font-family: var(--font3);
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+.about-social-container li {
+  display: flex;
+  gap: 5px;
+  justify-content: space-between;
+  max-width: fit-content;
+}
+
+.skill {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  text-align: left;
+  margin: 0px 30px;
+  padding: 0 20px;
+  margin-left: 30vh;
+}
+#about h3 {
+  text-align: left;
+  margin: 10px 30vh;
+  color: var(--color5);
+  font-size: 1.8rem;
+}
+.skill li {
+  line-height: 30px;
+  color: var(--color5);
+}
+#about ul.skill li:before {
+  font-size: 20px;
+  padding-right: 10px;
+  content: "▸";
+  vertical-align: bottom;
+}
+.about-social-container .fa-linkedin,
+.fa-github,
+.fa-google {
+  max-height: 20px;
+  text-decoration: none;
+  font-size: 2em;
+  letter-spacing: 1rem;
+  color: var(--color2);
+}
+
+#about h2 {
+  width: 100%;
+  height: auto;
+  font-size: 2rem;
+  animation: animated_text 5s ease infinite;
+  color: var(--color6);
+  font-family: var(--font1);
+}
