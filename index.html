@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/fonts.css" />
     <link rel="stylesheet" href="css/vars.css" />
     <link rel="stylesheet" href="css/animations.css" />
-    <link rel="stylesheet" href="css/sections/skills.css" />
+    <link rel="stylesheet" href="css/skills.css" />
     <link href="css/style.css" rel="stylesheet" />
 
     <script href="script.js"></script>
@@ -33,11 +33,11 @@
         <div class="navbar2">
           <div class="header2">
             <ul class="menu2">
-              <li data-section="home">Home</li>
-              <li data-section="about">About</li>
-              <li data-section="project">Project</li>
-              <li data-section="skills">Skills</li>
-              <li data-section="contact">Contact</li>
+              <li><a href="#header-container">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#projects" style="text-decoration: none;">Project</a></li>
+              <li><a href="#skill-sec">Skills</a></li>
+              <li><a href="#about">Contact</a></li>
             </ul>
           </div>
         </div>
@@ -73,7 +73,7 @@
       <div class="card">
         <div class="__content">
           <div class="front">
-            <img src="#" alt="photo" />
+            <img src="assets/avatar.jpg" alt="photo" />
           </div>
           <div class="back">
             <h1>HOBBIES</h1>
@@ -166,7 +166,7 @@
       </div>
     </div>
     <!-- skill -->
-    <div class="section" id="skill">
+    <div class="section" id="skill-sec">
       <div class="container" id="skill-container">
         <div class="col-md-12">
           <h2 class="skilltitle">My Skills</h2>
@@ -279,14 +279,14 @@
     <!-- ./skill -->
 
     <!-- projects -->
-    <section class="projects">
+    <section class="projects" id="projects">
       <div class="container">
         <h2 class="skilltitle" style="margin-bottom: 5vh">My Projects</h2>
         <div class="project-row">
           <div
             class="box2"
             style="
-              background-image: url('https://www.e-bureauet.dk/media/1351/case-hjv.jpg');
+              background-image: url(assets/projects/mlz.png);
             "
           >
             <div class="hover">
@@ -314,7 +314,7 @@
           <div
             class="box2"
             style="
-              background-image: url('https://www.e-bureauet.dk/media/1351/case-hjv.jpg');
+              background-image: url(assets/projects/digit.png);
             "
           >
             <div class="hover">
@@ -324,14 +324,11 @@
                 user draws on the canvas using the fourrier series and trained
                 on the MNIST dataset.
               </p>
-            
             </div>
           </div>
           <div
             class="box2"
-            style="
-              background-image: url(assets/projects/calculator.png);
-            "
+            style="background-image: url(assets/projects/calculator.png)"
           >
             <div class="hover">
               <h1>Calculator</h1>
@@ -427,7 +424,7 @@
           >
             <div class="hover">
               <h1>InnovateHer</h1>
-              <p>A website concerning an even with a registration page</p>
+              <p>A website presenting an event ,linked to its registration page and complete informations</p>
               <a href="https://innovateher.netlify.app/" class="resume"
                 >website</a
               >
@@ -435,15 +432,15 @@
           </div>
           <div
             class="box2"
-            style="
-              background-image: url('https://www.e-bureauet.dk/media/1351/case-hjv.jpg');
-            "
+            style="background-image: url(assets/projects/cabinet2.png)"
           >
             <div class="hover">
               <h1>Cabinet Medical</h1>
               <p>
-                Using java , a fully functional management system of a doctor's
-                office with cakend in Spring Boot
+                Using java for Backend in Spring Boot, a fully functional
+                management system of a doctor's office ,to manage appointments ,
+                prescriptions and patients with a patient, doctor and a
+                secretary's interface.
               </p>
             </div>
           </div>
@@ -451,14 +448,12 @@
         <div class="project-row">
           <div
             class="box2"
-            style="
-              background-image: url(assets/projects/weatherr.png);
-            "
+            style="background-image: url(assets/projects/weather.png)"
           >
             <div class="hover">
               <h1>WeatherFinder app</h1>
               <p>
-                The site is based on parallax ribbons and is fully responsive.
+                A django app made to display weather information about a city .
               </p>
             </div>
           </div>
@@ -490,14 +485,13 @@
           </div>
           <div
             class="box2"
-            style="
-              background-image: url(assets/projects/ecom.png);
-            "
+            style="background-image: url(assets/projects/greatkart.png)"
           >
             <div class="hover">
-              <h1>Ecom website </h1>
+              <h1>Ecom website</h1>
               <p>
-                E-commerce website fully responsive using django for backend with payment port 
+                E-commerce website fully responsive using django for backend
+                with payment port
               </p>
             </div>
           </div>
