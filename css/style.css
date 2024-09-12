@@ -665,5 +665,8 @@ hr {
 .content hr {
   margin: 1em 0;
 }
+.card{
+margin-top :-5px;
+}
 
 }
