@@ -548,6 +548,59 @@ section .container {
   font-family: var(--font1);
 }
 
+
+/*contact footer*/
+/* footer start */
+.footer-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 12vh;
+  background: var(--color1);
+  color: var(--color4);
+  border: none;
+  line-height: 2em;
+}
+
+.footer-content {
+  font-size: 1.3em;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: var(--color5);
+  font-family: var(--font1);
+}
+
+.footer-icons {
+  font-size: 1.9em;
+}
+
+.footer-icons a i {
+  color: var(--color2);
+  padding: 0 0.2em;
+  margin: 0.12em;
+  transition: color 0.3s ease;
+}
+footer .fa-github{
+  font-size: 30px;
+  padding-right: -5px;
+} 
+
+.footer-icons a i:hover {
+  color: var(--color5);
+}
+
+.fa-beat-fade:hover,.fa-bounce:hover,.fa-beat:hover {
+  animation: none;
+}
+
+.typed-cursor {
+  font-weight: bolder;
+  font-size: 2em; 
+}
+/* footer end */
+
+
 @media only screen and (min-device-width : 300px) and (max-device-width : 720px) {
   .menu2 {
     display: none; /* Hide the entire menu */
@@ -597,4 +650,20 @@ padding: 0 0.2rem;
   color: var(--color5);
   font-size: 0.6rem;
 }
+
+ .footer-container {
+  display: block;
+  text-align: center;
+}
+.footer-content {
+  font-size: 1.3em;
+}
+hr {
+  width: 90%;
+  margin: 0 auto;
+}
+.content hr {
+  margin: 1em 0;
+}
+
 }
