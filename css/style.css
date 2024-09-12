@@ -1,4 +1,4 @@
-2* {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -27,9 +27,6 @@ body {
   backdrop-filter: blur(8px);
   transition: backdrop-filter 0.5s ease;
   z-index: 99;
-  /* background-image: url('assets/your-background.gif'); Path to your GIF 
-  background-size: cover; /* Cover the entire container 
-  background-position: center; /* Center the background */
 }
 
 /* Navbar animation start */
@@ -117,7 +114,7 @@ body {
 
 .logo h2 {
   position: absolute;
-  filter: contrast(175%) brightness(200%);
+  filter: contrast(100%) brightness(200%);
 }
 
 .logo h2:nth-child(1) {
@@ -209,7 +206,7 @@ body {
   background: linear-gradient(
     to left,
     transparent 50%,
-    var(--color3) 50%,
+    var(--color6) 50%,
     var(--color5)
   );
   background-size: 200% 100%;
@@ -551,15 +548,17 @@ section .container {
   font-family: var(--font1);
 }
 
-@media only screen and (min-device-width : 320px) and (max-device-width : 720px) {
-.menu2 {
-display: hidden;
-}
-.header{
-flex-direction:column;
-font-size:12px;
-padding: 10px;
-}
+@media only screen and (min-device-width : 300px) and (max-device-width : 720px) {
+  .menu2 {
+    display: none; /* Hide the entire menu */
+  }
+
+  .logo {
+    display: flex; /* Ensure the logo is displayed */
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Center the logo */
+  }
 #header-container{
 flex-direction:column;
 width:100%;
@@ -571,7 +570,19 @@ font-size:12px;
   padding: 0 10px;
   margin-left: 0px;
 }
-
+#about{
+  width:90%;
+  padding-top: -5px;
+}
+#about h3, ul{
+  margin: auto;
+}
+#about ul{
+  font-size: 12px;
+}
+#about ul.skill li:before {
+  font-size: 12px;
+}
 .content h1 {
   font-size: 1.2rem;
 }

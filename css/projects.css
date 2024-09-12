@@ -62,7 +62,11 @@
   opacity: 1;
   cursor: pointer;
 }
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-.project-row{
-flex-direction: column;}
+@media (max-width: 767px) {
+  .box2 {
+    flex: 1 1 48%; /* Adjust the flex-basis to 48% for 2 boxes per row */
+    max-height: 250px; /* Reduce the maximum height for smaller screens */
+    height: 250px;
+    padding:2px;
+  }
 }
