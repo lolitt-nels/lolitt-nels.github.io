@@ -9,7 +9,8 @@ html {
 }
 
 body {
-  overflow-x: clip;
+  overflow-x: hidden;
+  width: 100%;
   background: var(--color1);
 }
 
@@ -548,4 +549,22 @@ section .container {
   animation: animated_text 5s ease infinite;
   color: var(--color6);
   font-family: var(--font1);
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 720px) {
+.menu2 {
+display: hidden;
+}
+.header{
+flex-direction:column;
+}
+#header-container{
+flex-direction:column;
+}
+.skill {
+  margin: 0px 10px;
+  padding: 0 10px;
+  margin-left: 0px;
+}
+
 }
