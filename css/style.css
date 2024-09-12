@@ -1,4 +1,4 @@
-* {
+2* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -578,5 +578,7 @@ font-size:12px;
 .content p{
 width:95%;
 }
-
+.about-social-container {
+padding: 0 0.2rem;
+}
 }
