@@ -581,4 +581,9 @@ width:95%;
 .about-social-container {
 padding: 0 0.2rem;
 }
+#about p {
+  margin: 10px 1vh;
+  color: var(--color5);
+  font-size: 0.6rem;
+}
 }
