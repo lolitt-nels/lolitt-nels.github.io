@@ -4,13 +4,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>portfolio</title>
-    <link href="style.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/vars.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+    <link rel="stylesheet" href="css/skills.css" />
+    <link href="css/style.css" rel="stylesheet" />
+
+    <script href="script.js"></script>
     <script
       src="https://kit.fontawesome.com/9fa51d37bd.js"
       crossorigin="anonymous"
-    ></script>  
-</head>
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="css/projects.css" />
+  </head>
+
   <body>
     <div class="header" id="home">
       <div class="logo">
@@ -21,12 +33,13 @@
         <div class="navbar2">
           <div class="header2">
             <ul class="menu2">
-              <li data-section="home">Home</li>
-              <li data-section="about">About</li>
-              <li data-section="project">Project</li>
-              <li data-section="skills">Skills</li>
-              <li data-section="contact">Contact</li>
+              <li><a href="#header-container">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#projects" style="text-decoration: none;">Project</a></li>
+              <li><a href="#skill-sec">Skills</a></li>
+              <li><a href="#footer">Contact</a></li>
             </ul>
+            
           </div>
         </div>
       </div>
@@ -40,8 +53,7 @@
           I'm a Full Stack Developer fueled by a passion for backend
           development. With a keen interest in Data Science and Machine
           Learning, I'm diving deeper into the world of Artificial Intelligence.
-          I love solving problems and creating new things!
-          I use Arch btw
+          I love solving problems and creating new things! I use Arch btw
         </p>
         <div class="social_media">
           <div>
@@ -49,7 +61,7 @@
               ><i class="fa-brands fa-github fa-beat button"></i
             ></a>
           </div>
-        <!--<div class="resume-container">
+          <!--<div class="resume-container">
             <a href="./public/Shivamresume.pdf" target="_blank">
               <div class="resume">
                 <div class="text">Resume</div>
@@ -62,7 +74,7 @@
       <div class="card">
         <div class="__content">
           <div class="front">
-            <img src="#" alt="photo" />
+            <img src="assets/avatar.jpg" alt="photo" />
           </div>
           <div class="back">
             <h1>HOBBIES</h1>
@@ -99,5 +111,411 @@
         </div>
       </h1>
     </section>
-  </body>
+
+    <div class="center">
+      <div id="about">
+        <!-- Name -->
+        <h2>About Me</h2>
+
+        <!-- social media container -->
+        <ul class="about-social-container">
+          <li>
+            <a href="https://github.com/lolitt-nels" target="_blank"
+              ><i class="fa-brands fa-github fa-bounce"></i
+            ></a>
+          </li>
+
+          <li>
+            <a href="mailto:melissabedrane@gmail.com" target="_blank"
+              ><i class="fab fa-google fa-bounce"></i
+            ></a>
+          </li>
+
+          <li>
+            <a href="#" target="_blank"
+              ><i class="fa fa-linkedin fa-bounce"></i
+            ></a>
+          </li>
+        </ul>
+        <!-- long bio -->
+        <p>
+          As a dedicated 3rd year Computer Science student, I am deeply
+          passionate about data science and machine learning, continually honing
+          my skills in these dynamic fields. I enjoy the challenges of backend
+          development as a full-stack developer, my true enthusiasm lies in
+          leveraging data to create innovative solutions that can make a
+          difference. I'm keen on problem-solving and love crafting responsive
+          web applications and websites that enhance user experiences.
+          <br />
+          <br />
+          In my free time, I explore my creativity by developing small games,
+          always seeking new ways to combine my technical expertise with my
+          desire to help others through technology. <br />
+        </p>
+        <!-- Skills / Tools -->
+        <h3>Skills</h3>
+        <ul class="skill">
+          <li>Frontend Development</li>
+          <li>Backend Development</li>
+          <li>Problem Solving</li>
+          <li>Machine learning</li>
+          <li>Rest API</li>
+          <li>Git</li>
+          <li>Linux (Arch , Ubuntu)</li>
+          <li>Game development</li>
+        </ul>
+      </div>
+    </div>
+    <!-- skill -->
+    <div class="section" id="skill-sec">
+      <div class="container" id="skill-container">
+        <div class="col-md-12">
+          <h2 class="skilltitle">My Skills</h2>
+          <div class="h-50"></div>
+        </div>
+        <section class="Skills">
+          <div class="container-skill">
+            <div class="mainSkill">
+              <div class="skill_categ">
+                <h2>Frontend</h2>
+                <div class="box">
+                  <div class="skill_card">
+                    <img src="assets/icons8-html5-50.png" alt="" />
+                    HTML
+                  </div>
+                  <div class="skill_card">
+                    <img src="assets/icons8-css-50.png" alt="" />
+                    CSS
+                  </div>
+                  <div class="skill_card">
+                    <img src="assets/icons8-javascript-50.png" alt="" />
+                    JavaScript
+                  </div>
+                  <div class="skill_card">
+                    <img src="assets/icons8-react-js-50.png" alt="" />
+                    React.js
+                  </div>
+                  <div class="skill_card">
+                    <img src="assets/icons8-bootstrap-50.png" alt="" />
+                    Bootstrap
+                  </div>
+                </div>
+              </div>
+              <div class="skill_categ">
+                <h2>Backend</h2>
+                <div class="box">
+                  <div class="skill_card">
+                    <img src="assets/back/icons8-django-48.png" alt="" />
+                    Django
+                  </div>
+                  <div class="skill_card">
+                    <img src="assets/back/icons8-postgresql-50.png" alt="" />
+                    PostgreSQL
+                  </div>
+                  <div class="skill_card">
+                    <img src="assets/back/icons8-mysql-logo-48.png" alt="" />
+                    MYSQL
+                  </div>
+                  <div class="skill_card">
+                    <img src="assets/back/icons8-python-50.png" alt="" />
+                    Python
+                  </div>
+                </div>
+              </div>
+              <div class="skill_categ">
+                <h2>Tools & Services</h2>
+                <div class="box">
+                  <div class="skill_card">
+                    <img src="assets/tools/icons8-github-60.png" alt="" />
+                    Github
+                  </div>
+                  <div class="skill_card">
+                    <img src="assets/tools/icons8-git-50.png" alt="" />
+                    Git
+                  </div>
+                  <div class="skill_card">
+                    <img
+                      src="assets/tools/icons8-visual-studio-50.png"
+                      alt=""
+                    />
+                    VS Code
+                  </div>
+                  <div class="skill_card">
+                    <img src="assets/tools/icons8-arch-linux-48.png" alt="" />
+                    Arch
+                  </div>
+                  <div class="skill_card">
+                    <img src="assets/tools/icons8-ubuntu-60.png" alt="" />
+                    Ubuntu
+                  </div>
+
+                  <div class="skill_card">
+                    <img src="assets/tools/icons8-emacs-50.png" alt="" />
+                    Emacs
+                  </div>
+                </div>
+              </div>
+              <div class="skill_categ">
+                <h2>Other Languages</h2>
+                <div class="box">
+                  <div class="skill_card">
+                    <img src="assets/others/icons8-c-100.png" alt="" />
+                    C
+                  </div>
+                  <div class="skill_card">
+                    <img src="assets/others/icons8-java-50.png" alt="" />
+                    Java
+                  </div>
+                  <div class="skill_card">
+                    <img src="assets/others/icons8-bash-50.png" alt="" />
+                    Bash
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <!-- ./skill -->
+
+    <!-- projects -->
+    <section class="projects" id="projects">
+      <div class="container">
+        <h2 class="skilltitle" style="margin-bottom: 5vh">My Projects</h2>
+        <div class="project-row">
+          <div
+            class="box2"
+            style="
+              background-image: url(assets/projects/mlz.png);
+            "
+          >
+            <div class="hover">
+              <h1>MLZ  Machine learning library</h1>
+              <p>
+                This is a custom Neural Network library in python coded in
+                collaboration with @zaqks
+              </p>
+            </div>
+          </div>
+          <div
+            class="box2"
+            style="
+              background-image: url('https://www.e-bureauet.dk/media/1351/case-hjv.jpg');
+            "
+          >
+            <div class="hover">
+              <h1>MNIST solver</h1>
+              <p>
+                CNN implemented from scratch using the MLZ custom library achieving 98.7% 
+                accuracy on the MNIST dataset, using Django ,it was made into a digit matcher
+              </p>
+            </div>
+          </div>
+          <div
+            class="box2"
+            style="
+              background-image: url(assets/projects/digit.png);
+            "
+          >
+            <div class="hover">
+              <h1>Digit matcher</h1>
+              <p>
+                This site presents a Digit matcher that matches any digit the
+                user draws on the canvas vased on the fourrier series,trained
+                on the MNIST dataset , using MLZ custom library from scratch only ysing numpy.
+              </p>
+            </div>
+          </div>
+          <div
+            class="box2"
+            style="background-image: url(assets/projects/calculator.png)"
+          >
+            <div class="hover">
+              <h1>Calculator</h1>
+              <p>a calculator using vanilla Js, html and css</p>
+              <a href="https://calculatrice-melib.netlify.app/" class="resume"
+                >website</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="project-row">
+          <div
+            class="box2"
+            style="background-image: url(assets/projects/huddle.png)"
+          >
+            <div class="hover">
+              <h1>Huddle landing page</h1>
+              <p>
+                fully responsive pixel-perfect rendition of the huddle landing
+                page
+              </p>
+              <a
+                href="https://radiant-stardust-3f1463.netlify.app"
+                class="resume"
+                >website</a
+              >
+            </div>
+          </div>
+          <div
+            class="box2"
+            style="background-image: url(assets/projects/notif.png.png)"
+          >
+            <div class="hover">
+              <h1>Notification page</h1>
+              <p>a notification page that is fully responsive and mobile-friendly with ability to add comments ,live demo hosted on netlify</p>
+              <a href="https://page-notif.netlify.app/#" class="resume"
+                >website</a
+              >
+            </div>
+          </div>
+          <div
+            class="box2"
+            style="background-image: url(assets/projects/regist.png)"
+          >
+            <div class="hover">
+              <h1>Registration Page</h1>
+              <p>pixel-perfect rendition of a registration page challenge using HTML5 , CSS ,JavaScript with a Succes page notification</p>
+              <a href="https://magical-kitten-e35e37.netlify.app" class="resume"
+                >website</a
+              >
+            </div>
+          </div>
+          <div
+            class="box2"
+            style="background-image: url(assets/projects/quiz.png)"
+          >
+            <div class="hover">
+              <h1>Quiz game</h1>
+              <p>CS Quiz game around computer science using Javascript , featurning limited-time questions that are randomized</p>
+              <a href="https://it-quiz-try.netlify.app" class="resume"
+                >website</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="project-row">
+          <div class="box2" style="background-image: url(assets/projects/)">
+            <div class="hover">
+              <h1>projet Tp c</h1>
+              <p>memory allocation of process simulator coded from scratch in C using Raylib for the graphical rendition of the stacks </p>
+              <a
+                href="https://radiant-stardust-3f1463.netlify.app"
+                class="resume"
+                >website</a
+              >
+            </div>
+          </div>
+          <div
+            class="box2"
+            style="background-image: url(assets/projects/2048.png)"
+          >
+            <div class="hover">
+              <h1>2048 game</h1>
+              <p>the famous game with my own rendition this time</p>
+              <a href="https://spiffy-custard-49b106.netlify.app" class="resume"
+                >website</a
+              >
+            </div>
+          </div>
+          <div
+            class="box2"
+            style="background-image: url(assets/projects/innov.png)"
+          >
+            <div class="hover">
+              <h1>InnovateHer</h1>
+              <p>A website presenting and promoting the InnovateHer event for women in Stem ,linked to its registration page and showing the complete informations</p>
+              <a href="https://innovateher.netlify.app/" class="resume"
+                >website</a
+              >
+            </div>
+          </div>
+          <div
+            class="box2"
+            style="background-image: url(assets/projects/cabinet2.png)"
+          >
+            <div class="hover">
+              <h1>Cabinet Medical</h1>
+              <p>
+                Using java for Backend in Spring Boot, a fully functional
+                management system of a doctor's office ,to manage appointments ,
+                prescriptions and patients with a patient, doctor and a
+                secretary's interface.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="project-row">
+          <div
+            class="box2"
+            style="background-image: url(assets/projects/weather.png)"
+          >
+            <div class="hover">
+              <h1>WeatherFinder app</h1>
+              <p>
+                A django application made to display weather information about a city .
+              </p>
+            </div>
+          </div>
+          <div
+            class="box2"
+            style="background-image: url(assets/projects/Untitled.png)"
+          >
+            <div class="hover">
+              <h1>React todolist</h1>
+              <p>responsive to-do list with CRUD application using ReactJS to maximise productiveness and organisation, with the locall storage , you can edit tasks and cross-out the done ones</p>
+              <!--- <a href="#" class="resume">website</a> -->
+            </div>
+          </div>
+          <div
+            class="box2"
+            style="
+              background-image: url(assets/projects/Screenshot_20240911_141315.png);
+            "
+          >
+            <div class="hover">
+              <h1>old portfolio</h1>
+              <p>a responsive website using Javascript, html and css to showcase done projects and abilities , old version of this one</p>
+              <a
+                href="https://meli-b-portfoliowebsite.netlify.app"
+                class="resume"
+                >website</a
+              >
+            </div>
+          </div>
+          <div
+            class="box2"
+            style="background-image: url(assets/projects/greatkart.png)"
+          >
+            <div class="hover">
+              <h1>Greatkart E-com website</h1>
+              <p>
+                E-commerce website fully responsive using django for backend
+                with payment port 
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2 class="skilltitle">More projects coming soon...!</h2>
+    </section>
+     
+    <!-- ./projects-->
+ 
+  <footer class="footer-container">
+    <div class="footer-content">Made with ❤️ by Meli-b</div>
+    <div class="footer-icons">
+      <a href="https://github.com/lolitt-nels" target="_blank"
+        ><i class="fa-brands fa-github fa-beat-fade"></i
+      ></a>
+      <a href="https://www.linkedin.com/in/melissa-bedrane-4a38a12b6/" target="_blank"
+        ><i class="fa-brands fa-linkedin-in fa-beat-fade"></i
+      ></a>
+      <a href="mailto:melissabedrane@gmail.com" target="_blank"
+        ><i class="fa-solid fa-envelope fa-beat-fade"></i
+      ></a>
+    </div>
+  </footer>
+</body>
 </html>

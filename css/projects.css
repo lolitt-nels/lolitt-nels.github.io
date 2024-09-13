@@ -1,0 +1,72 @@
+/* Container for the projects section */
+.projects {
+  margin: 100px 10px;
+}
+
+/* Centering the title */
+.projects h1 {
+  text-align: center;
+  margin: 20px 0;
+  font-family: "Patua One", cursive;
+}
+
+/* Flexbox for the project boxes */
+.project-row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; /* Allows wrapping for responsiveness */
+}
+
+/* Individual project box styles */
+.box2 {
+  flex: 1 1 22%; /* Flex-grow, flex-shrink, flex-basis */
+  max-height: 350px;
+  height: 350px;
+  background-color: #eeeeee;
+  background-size: cover;
+  background-position: center center;
+  transition: all 0.5s ease-in-out;
+  margin: 10px; /* Space between boxes */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative; /* Required for absolute positioning of hover content */
+}
+
+/* Hover effect */
+.box2 .hover {
+  position: absolute; /* Positioning for hover text */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  transition: all 0.5s ease-in-out;
+  padding: 2em;
+}
+
+.box2 .hover h1,
+.box2 .hover p {
+  color: #ffffff;
+}
+
+.box2:hover {
+  filter: grayscale(100%);
+}
+
+.box2:hover .hover {
+  opacity: 1;
+  cursor: pointer;
+}
+@media (max-width: 767px) {
+  .box2 {
+    flex: 1 1 48%; /* Adjust the flex-basis to 48% for 2 boxes per row */
+    max-height: 250px; /* Reduce the maximum height for smaller screens */
+    height: 250px;
+    padding:2px;
+  }
+}
